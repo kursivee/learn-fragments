@@ -8,13 +8,9 @@ import android.support.v4.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(), ContentFragment1.OnFragmentInteractionListener, ContentFragment2.OnFragmentInteractionListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var fragmentManager: FragmentManager
-
-    override fun onFragmentInteraction(uri: Uri) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
